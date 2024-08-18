@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "sora-light";
+  src: url("../fonts/sora/Sora-Light.ttf");
+}
+@font-face {
+  font-family: "sora-regular";
+  src: url("../fonts/sora/Sora-Regular.ttf");
+}
+@font-face {
+  font-family: "sora-bold";
+  src: url("../fonts/sora/Sora-Bold.ttf");
+}
+@font-face {
+  font-family: "sora-semibold";
+  src: url("../fonts/sora/Sora-SemiBold.ttf");
+}
+@font-face {
+  font-family: "sora-extrabold";
+  src: url("../fonts/sora/Sora-ExtraBold.ttf");
+}
+:root {
+  --border: 1px solid red;
+  --white: white;
+  --brand_color: #814cec;
+  --brand_color2: #30185e;
+  --text_font_size: 16px;
+  --section_heading_font_size: 45px;
+  --font_sora_light: "sora-light";
+  --font_sora_regular: "sora-regular";
+  --font_sora_bold: "sora-bold";
+  --font_sora_semibold: "sora-semibold";
+  --font_sora_extrabold: "sora-extrabold";
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+i,
+span,
+b,
+img,
+strong {
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: flex;
+}
+
+body {
+  font-family: var(--font_sora_regular);
+}
+
+a {
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+/** utilities **/
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.box {
+  border: var(--border);
+  padding: 20px;
+  background-color: white;
+}
+
+/** components **/
+.user_card {
+  border-width: 1px;
+  border-style: solid;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.user_card .user_card_image {
+  border-radius: 30px;
+}
+.user_card .user_card_title {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.public_card {
+  border-style: double;
+}
+
+.card {
+  background-color: rgb(255, 209, 209);
+  display: flex;
+  transition: all linear 0.3s;
+}
+
+#header {
+  padding: 20px 0px;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 80px 240px 1fr 150px;
+  column-gap: 30px;
+}
+.navbar .logo {
+  display: grid;
+  align-content: center;
+}
+.navbar .logo img {
+  height: 30px;
+}
+.navbar .email {
+  display: grid;
+  align-content: center;
+}
+.navbar .email a:hover {
+  color: var(--brand_color2);
+}
+.navbar .nav_list {
+  display: grid;
+  align-content: center;
+}
+.navbar .nav_list ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.navbar .nav_list ul li a {
+  text-transform: capitalize;
+  color: var(--brand_color);
+}
+.navbar .nav_list ul li a:hover {
+  color: var(--brand_color2);
+}
+.navbar .hire_me_btn {
+  text-align: right;
+}
+.navbar .hire_me_btn a {
+  color: var(--white);
+  font-family: var(--font_sora_bold);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  background: rgb(129, 76, 236);
+  background: linear-gradient(90deg, rgb(129, 76, 236) 0%, rgb(48, 24, 94) 100%);
+}
+.navbar .hire_me_btn a:hover {
+  background: rgb(48, 24, 94);
+  background: linear-gradient(90deg, rgb(48, 24, 94) 0%, rgb(129, 76, 236) 100%);
+}
+
+/*# sourceMappingURL=app.css.map */

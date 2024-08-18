@@ -1,0 +1,96 @@
+web design
+    html
+
+    css
+        preprocessor
+            sass
+            less
+        auto prefix
+
+    project 1:
+        site cloning
+
+    linting
+    code organize
+    project setup
+
+    github
+        brach mangement
+        pull
+        code check
+        github action
+
+    deployment
+        cpanel
+        vps
+        CICD
+
+    professional project
+        project 2:
+            portfolio
+
+        project 3:
+            e-commerce
+
+    JS basic
+        alpine js
+        dom manipulation
+        basic html rendering
+
+JS frontend
+
+    JS core
+        basic programming
+        problem solving
+        essential data structure and algorithms
+
+    JS DOM BOM
+        everything about dom manupulation
+        single page design
+        basic software
+            calculator
+            user management
+            product management
+            cart management
+            time management
+
+        REACT JS
+            basic html project
+            basic management software
+            advanced website 
+                e-commerce
+                dashboard management
+
+
+JS backend
+    node JS
+    Express JS
+        project 1:
+            porfolio website development with express and ejs
+
+        REST API
+            system design
+            system architecture
+            system analysis
+            system requirement specification
+
+            project budget and timeline
+
+            Database Design
+                mongodb
+                mysql
+                postgree
+
+            API design
+
+            Poject setup
+            Service development
+
+        Project 2:
+            full stack e-commerce
+
+    Deployment
+        Vps server setup
+        Docker basic
+        CICD
+        Monitoring
