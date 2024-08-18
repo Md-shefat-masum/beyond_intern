@@ -10,99 +10,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/styles/app.css">
 </head>
 
 <body>
-    <!-- 
-        heading
-            h1
-            h2
-            h3
-            h4
-            h5
-            h6
-
-        paragraph
-            p
-            b
-            strong
-            i
-            u
-            span
-            sub 
-            sup
-            del
-
-        box
-            header
-            nav
-            section
-            main
-            aside
-            footer
-            article
-
-            div
-
-        
-        
-        image
-            img
-            figure
-            caption
-        
-        video
-            video
-            iframe
-
-        table
-            thead
-            tbody
-            tr
-            td
-            tfoot
-        
-        list
-            ul
-            ol
-            dl
-
-        form
-
-
-    css
-
-        text
-            color
-            font-family
-            font-weight
-            font-style
-            font-size
-            line-height
-
-        box
-            height
-            widht
-            backgorund
-                color
-                image
-                gradient
-            padding
-            margin
-            border
-                color
-                style
-                radius
-            disply
-                flex
-                grid
-                float
-                block
-                inline-block
-                inline
-    -->
-
     <header id="header">
         <div class="container">
             <div class="navbar">
@@ -132,43 +44,110 @@
         </div>
     </header>
 
-    <style>
-        .banner_part {
-            background-color: yellowgreen;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 30px;
+    <!-- <style>
+        .relative_el {
+            position: relative;
+            height: 300px;
+
+            .move_item1 {
+                position: absolute;
+                border: var(--border);
+                /* height: 120px; */
+                /* width: 120px; */
+                /* background-color: red; */
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .move_item2 {
+                position: absolute;
+                height: 120px;
+                width: 120px;
+                background-color: rgb(0, 255, 13);
+            }
         }
 
-        .bottom_btns {
-            display: grid;
-            column-gap: 20px;
-            grid-template-columns: 120px 1fr;
+        .banner_heading {
+            color: black;
+            -webkit-text-fill-color: white;
+            /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            font-family: emoji;
+            font-size: 150px;
+            animation: zoomin_out 2s linear infinite;
+        }
+
+        @keyframes zoomin_out {
+            0%{
+                transform: scale(.9);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(.9);
+            }
         }
     </style>
+    <div class="box relative_el">
+        <div class="move_item2"></div>
+        <div class="move_item1">
+            <h1 class="banner_heading">HI</h1>
+        </div>
+    </div> -->
+
     <section>
         <div class="container">
-            <div class="box banner_part">
-                <div class="box">
-                    <h2>i am developer</h2>
-                    <h1>software engineer</h1>
-                    <p>
+            <div class="banner_part">
+                <div class="hi_el">
+                    HI
+                </div>
+                <div class="left">
+                    <h2 class="sub_heading">I am Developer</h2>
+                    <h1 class="heading">software engineer</h1>
+                    <p class="banner_description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum, odit sit voluptatum
                         voluptate
                         impedit quaerat minima quasi a itaque?
                     </p>
-                    <div class="box bottom_btns">
-                        <div class="box">
-                            <button>download cv</button>
+                    <div class="bottom_btns">
+                        <div class="download_cv">
+                            <a href="#" class="cv_btn">
+                                <span>
+                                    Download CV 
+                                </span>
+                                <i class="fa-solid fa-download"></i>
+                            </a>
                         </div>
-                        <div class="box">
-                            <button>f</button>
-                            <button>y</button>
-                            <button>c</button>
+                        <div class="">
+                            <ul class="social_icons">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-dribbble"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="right">
                     <img src="https://themejunction.net/html/gerold/demo/assets/img/hero/me.png" alt="">
                 </div>
             </div>
@@ -270,7 +249,7 @@
             grid-template-columns: 100px 1fr;
         }
 
-        .contact_input_grid{
+        .contact_input_grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
